@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #fff;
+  --title-color: #000;
+  --text-color: #222;
+  --gray-color: #918e9b;
+  --light-gray-color: #f9f9f9;
+  --branding-color: #fe395c;
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-gray-color);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  > .App-container {
+    gap: 50px;
+    display: flex;
+
+    > div {
+      position: relative;
+      width: 475px;
+      background-color: var(--bg-color);
+      box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+  }
+}
